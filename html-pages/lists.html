@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../green-style.css">
+<title>Lists</title>
+</head>
+
+<body>
+
+<h2 class="greeny">Unordered list</h1>
+
+<!--
+  ul - unordered list
+  li - list item
+-->
+
+<!--
+  list-style-type property defines the style of item marker
+  disc - bullet (default)
+  circle
+  square
+  none - no marking
+-->
+
+<div style="display:flex; padding: 20px;">
+
+<ul style="list-style-type:disc;">
+  <li>First point</li>
+<li>Second point</li>
+  <li>Third point</li>
+</ul>
+
+<ul style="list-style-type:circle;">
+  <li>First point</li>
+  <li>Second point</li>
+  <li>Third point</li>
+</ul>
+
+<ul style="list-style-type:square;">
+  <li>First point</li>
+  <li>Second point</li>
+  <li>Third point</li>
+</ul>
+
+<ul style="list-style-type:none;">
+  <li>First point</li>
+  <li>Second point</li>
+  <li>Third point</li>
+  </ul>
+  </div>
+
+<p class="note">Lists can be inside other lists</p>
+
+<ul>
+  <li> First point</li>
+  <ul>
+    <li>Second point</li>
+    <li>Third point</li>
+  </ul>
+  <li>Fourth point</li>
+</ul>
+
+<hr>
+<h2 class="greeny">Ordered list</h2>
+
+<!--
+  ol - ordered list
+-->
+
+<!--
+  type attribute defines the type of the item marker
+  "1" - numbers (default)
+  "A" - uppercase letters
+  "a" - lowercase letters
+  "I" - uppercase roman numbers
+  "i" - lowercase roman numbers
+-->
+
+<div style="display:flex;">
+
+<ol type="1">
+  <li>First point</li>
+  <li>Second point</li>
+  <li>Third point</li>
+</ol>
+
+<ol type="A">
+  <li>First point</li>
+  <li>Second point</li>
+  <li>Third point</li>
+</ol>
+
+<ol type="a">
+  <li>First point</li>
+  <li>Second point</li>
+  <li>Third point</li>
+</ol>
+
+<ol type="I">
+  <li>First point</li>
+  <li>Second point</li>
+  <li>Third point</li>
+</ol>
+
+<ol type="i">
+  <li>First point</li>
+  <li>Second point</li>
+  <li>Third point</li>
+</ol>
+
+</div>
+
+<p class="note">Counting can be started from a specified number by 
+using the <strong>start</strong> attribute</p>
+
+<ol start="50">
+  <li>First point</li>
+  <li>Second point</li>
+  <li>Third point</li>
+</ol>
+
+<hr>
+
+<h2 class="greeny">Description list</h2>
+
+<!--
+  dl - description list
+  dt - defining the term (name)
+  dd - term description
+-->
+
+<dl>
+  <dt>PHP</dt>
+    <dd> - bad language</dd>
+  <dt>Python</dt>
+    <dd>- good language</dd>
+</dl>
+
+<br><br>
+<hr>
+
+<a href="../../index.html">Return to home page</a>
+
+</body>
+</html>

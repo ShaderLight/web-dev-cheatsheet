@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Iframe</title>
+<link rel="stylesheet" href="../green-style.css">
+</head>
+
+<body>
+
+<h1>Iframe</h1>
+
+<p class="note">Iframe is used to display a page in a page</p>
+
+<div style="display:flex;">
+<iframe src="../index.html" title="home-page" width="100%" height="450px" name=myIframe></iframe>
+</div>
+<br>
+
+<h2 class="greeny">Basic iframe attributes</h2>
+
+<ul style="font-family: Verdana;">
+  <li>Height</li>
+  <li>Width</li>
+  <li>Title</li>
+  <li>Name - used to target the iframe by a link</li>
+  <li>Style</li>
+    <ul>
+      <li>Height</li>
+      <li>Width</li>
+      <li>Border</li>
+    </ul>
+</ul>
+
+<h2 class="greeny">Targeting the iframe</h2>
+
+<p>Sample &lt;a&gt; link targeting the iframe</p>
+<pre>
+&lt;a href=&quot;old_home.html&quot; target=&quot;myIframe&quot;&gt;Old home page&lt;/a&gt;
+&lt;a href=&quot;home.html&quot; target=&quot;myIframe&quot;&gt;New home page&lt;/a&gt;
+</pre>
+
+<a href="old_home.html" target="myIframe">Old home page</a>
+<br><br>
+
+<a href="../index.html" target="myIframe">New home page</a>
+<br><br>
+
+<hr>
+<a href="../index.html">Return to home page</a>
+
+</body>
+</html>

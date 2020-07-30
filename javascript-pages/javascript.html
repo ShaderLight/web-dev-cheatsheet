@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Javascript</title>
+<link rel="stylesheet" href="../green-style.css">
+</head>
+
+<body>
+
+<h1>Javascript</h1>
+
+<p class="note">Javascript makes pages more dynamic and interactive</p>
+
+<p class="greeny note">We can define a client-side script (JavaScript) by using <strong>&lt;script&gt;</strong> tag</p>
+
+<p>Sample script, which writes some text into any HTML element with id="text-container"</p>
+<pre>
+<strong>&#x3C;script&#x3E;</strong>
+document.getElementById(&#x22;text-container&#x22;).innerHTML = &#x22;Hello World!&#x22;;
+<strong>&#x3C;/script&#x3E;</strong>
+</pre>
+
+<p> JavaScript can also change attributes and styles of chosen HTML element</p>
+<pre>
+document.getElementById(&#x22;sample-element&#x22;).style.color = &#x22;blue&#x22;;
+document.getElementById(&#x22;sample-image&#x22;).src = &#x22;picture.jpg&#x22;;
+</pre>
+
+<p>JavaScript function can be activated by some events, like onclick event on a button</p>
+<pre>
+<strong>&#x3C;button </strong> type=&#x22;button&#x22; onclick=&#x22;document.getElementById(&#x27;date-button&#x27;).innerHTML = Date()&#x22;<strong>&#x3E;</strong>Date button<strong>&#x3C;/button&#x3E;</strong>
+<strong>&#x3C;p </strong>id=&#x22;date-button&#x22;<strong>&#x3E;</strong>[output of the script]<strong>&#x3C;/p&#x3E;</strong>
+</pre>
+<button type="button" onclick="document.getElementById('date-button').innerHTML = Date()">
+Date button
+</button>
+<p id="date-button">[output of the script]</p>
+
+<h2 class="greeny">Noscript</h2>
+
+<p class="note"><strong>&#x3C;noscript&#x3E;</strong> tag allows us to define alternative content, when JavaScript couldn't be loaded, <br>similar to <strong>alt</strong> attribute in <strong>&#x3C;img&#x3E;</strong> tag</p>
+<pre>
+&#x3C;script&#x3E;
+document.getElementById(&#x22;text-container&#x22;).innerHTML = &#x22;Hello World!&#x22;;
+&#x3C;/script&#x3E;
+&#x3C;noscript&#x3E;Your browser does not support JavaScript!&#x3C;/noscript&#x3E;
+</pre>
+
+<br><hr>
+<a href="../index.html">Return to home page</a>
+
+</body>
+</html>

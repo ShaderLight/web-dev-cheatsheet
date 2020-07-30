@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Table</title>
+<link rel="stylesheet" href="../green-style.css">
+<style>
+    table, th, td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    th {
+        text-align: left;
+    }
+
+    table {
+        border-spacing: 15px;
+    }
+</style>
+</head>
+
+<body>
+<!-- Every table begins with <table> tag
+  tr -  table row
+  th - table head
+  td - table data 
+-->
+
+<table style="width: 100%;">
+  <caption>Table caption</caption>
+  <tr>
+    <th>First</th>
+    <th>Second</th>
+    <th>Third</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+</table>
+<br>
+
+<table style="border-collapse: collapse;">
+  <tr>
+    <th>One</th>
+    <th>Two</th>
+    <th>Three</th>
+  </tr>
+  <tr>
+    <td>Cell</td>
+    <td colspan="2">Multicell</td>
+  </tr>
+</table>
+<br>
+
+<table style="border-collapse: collapse;">
+  <tr>
+    <th>One</th>
+    <th>Two</th>
+    <th>Three</th>
+  </tr>
+  <tr>
+    <td>Cell</td>
+    <td rowspan="2">Multicell</td>
+    <td> Cell</td>
+  </tr>
+  <tr>
+    <td>Cell</td>
+    <td>Cell</td>
+  </tr>
+</table>
+<br><br>
+
+<hr>
+
+<a href="../index.html">Return to home page</a>
+
+</body>
+</html>
