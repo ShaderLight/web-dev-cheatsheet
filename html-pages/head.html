@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<title>Head</title>
-<link rel="stylesheet" href="../green-style.css">
+	<meta charset="UTF-8">
+	<title>Head</title>
+	<link rel="stylesheet" href="../green-style.css">
 </head>
 
 <body>
@@ -18,83 +18,92 @@ the webpage and it's not visible for the user in most cases</p>
 
 <p class="note">The title is visible in the browser's tab and in search engines' results</p>
 <pre>
-    <strong>&#x3C;head&#x3E;</strong>
-        <strong>&#x3C;title&#x3E;</strong>The title of the website<strong>&#x3C;/title&#x3E;</strong>
-    <strong>&#x3C;/head&#x3E;</strong>
+<strong>&#x3C;head&#x3E;</strong>
+	<strong>&#x3C;title&#x3E;</strong>The title of the website<strong>&#x3C;/title&#x3E;</strong>
+<strong>&#x3C;/head&#x3E;</strong>
 </pre>
 
 <h2 class="greeny">Style</h2>
 
 <p class="note">The style element defines style information for the page</p>
 <pre>
-    <strong>&#x3C;head&#x3E;</strong>
-        <strong>&#x3C;style&#x3E;</strong>
-            body {background-color: blue;}
-            h1 {color: red;}
-        <strong>&#x3C;/style&#x3E;</strong>
-    <strong>&#x3C;/head&#x3E;</strong>
+<strong>&#x3C;head&#x3E;</strong>
+	<strong>&#x3C;style&#x3E;</strong>
+		body {background-color: blue;}
+		h1 {color: red;}
+	<strong>&#x3C;/style&#x3E;</strong>
+<strong>&#x3C;/head&#x3E;</strong>
 </pre>
 
 <h2 class="greeny">Link</h2>
-<p class="note">The link element is used to define relationships between 
-the document and external files, mostly stylesheets</p>
+
+<p class="note">
+	The link element is used to define relationships between 
+	the document and external files, mostly stylesheets
+</p>
 <pre>
-    <strong>&#x3C;head&#x3E;</strong>
-        <strong>&#x3C;link</strong> rel=&#x22;stylesheet&#x22; href=&#x22;style_file.css&#x22;<strong>&#x3E;</strong>
-    <strong>&#x3C;/head&#x3E;</strong>
+<strong>&#x3C;head&#x3E;</strong>
+	<strong>&#x3C;link</strong> rel=&#x22;stylesheet&#x22; href=&#x22;style_file.css&#x22;<strong>&#x3E;</strong>
+<strong>&#x3C;/head&#x3E;</strong>
 </pre>
 
 <h2 class="greeny">Meta</h2>
 
-<p class="note">The meta element specifies the character set, keywords 
-or page description and other data 
-<br>often used by search engines or web services</p>
+<p class="note">
+	The meta element specifies the character set, keywords 
+	or page description and other data
+	<br>often used by search engines or web services
+</p>
 <br>
 
 <p>Defining the character set</p>
 <pre>
-    <strong>&#x3C;head&#x3E;</strong>
-        <strong>&#x3C;meta</strong> charset=&#x22;UTF-8&#x22;<strong>&#x3E;</strong>
-    <strong>&#x3C;/head&#x3E;</strong>
+<strong>&#x3C;head&#x3E;</strong>
+	<strong>&#x3C;meta</strong> charset=&#x22;UTF-8&#x22;<strong>&#x3E;</strong>
+<strong>&#x3C;/head&#x3E;</strong>
 </pre>
 
 <p>Defining a description</p>
 <pre>
-    <strong>&#x3C;meta</strong> name=&#x22;description&#x22; content=&#x22;My webpage&#x22;<strong>&#x3E;</strong>
+<strong>&#x3C;meta</strong> name=&#x22;description&#x22; content=&#x22;My webpage&#x22;<strong>&#x3E;</strong>
 </pre>
 
 <p>Setting the viewport</p>
 <pre>
-    <strong>&#x3C;meta</strong> name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;<strong>&#x3E;</strong>
+<strong>&#x3C;meta</strong> name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;<strong>&#x3E;</strong>
 </pre>
 
-<p class="greeny note" style="margin: 20px; padding: 10px;">The viewport is the user's 
-visible area of a web page, and it changes with the device - smaller on a phone, 
-bigger on a computer screen. <strong>width=device-width</strong> sets the width of the page 
-to width of the device screen. <strong>initial-scale=1.0</strong> sets the 
-initial zoom level when the page is loaded</p>
+<p class="greeny note" style="margin: 20px; padding: 10px;">
+	The viewport is the user's 
+	visible area of a web page, and it changes with the device - smaller on a phone, 
+	bigger on a computer screen. <strong>width=device-width</strong> sets the width of the page 
+	to width of the device screen. <strong>initial-scale=1.0</strong> sets the 
+	initial zoom level when the page is loaded
+</p>
 
 <h2 class="greeny">Script</h2>
 
 <p class="note">Script element defines client-side JavaScript scripts</p>
 <pre>
-    <strong>&#x3C;script&#x3E;</strong>
-        function myFunction() {
-            document.getElementById(&#x22;sample-element&#x22;).innerHTML = &#x22;Hello World!&#x22;;
-        }       
-    <strong>&#x3C;/script&#x3E;</strong>
+<strong>&#x3C;script&#x3E;</strong>
+	function myFunction() {
+		document.getElementById(&#x22;sample-element&#x22;).innerHTML = &#x22;Hello World!&#x22;;
+	}       
+<strong>&#x3C;/script&#x3E;</strong>
 </pre>
 
 <h2 class="greeny">Base</h2>
 
 <p class="note">Base element defines the base URL used by realative URLs. It must have an href or target attribute</p>
 <pre>
-    <strong>&#x3C;head&#x3E;</strong>
-        &#x3C;base href=&#x22;https://mywebsite.com&#x22; target=&#x22;_blank&#x22;&#x3E;
-    <strong>&#x3C;/head&#x3E;</strong>   
+<strong>&#x3C;head&#x3E;</strong>
+	&#x3C;base href=&#x22;https://mywebsite.com&#x22; target=&#x22;_blank&#x22;&#x3E;
+<strong>&#x3C;/head&#x3E;</strong>   
 </pre>
-<p class="greeny note">Only one <strong>&#x3C;base&#x3E;</strong> element can be present 
-in a single page</p>
+<p class="greeny note">
+	Only one <strong>&#x3C;base&#x3E;</strong> element can be present 
+	in a single page
+</p>
 
 <br><hr>
 <a href="../index.html">Return to home page</a>

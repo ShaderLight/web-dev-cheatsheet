@@ -28,9 +28,9 @@ a:hover, a:active {
   padding: 15px 25px;
   border: 5px solid  #CDADEB;
   display: grid;
-  margin: 20px;
   background-color: #EBCDAD;
-  opacity: 90%;
+  opacity: 100%;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -98,4 +98,45 @@ pre {
   font-size: 90%;
   font-family: Verdana;
   font-style: italic;
+}
+
+.left-div {
+  float: left;
+  margin-left: 3.5%;
+  width: 31%;
+  margin-right: -5px;
+  overflow: hidden;
+}
+
+.middle-div {
+  float: left;
+  width: 31%;
+  overflow: hidden;
+}
+
+.right-div {
+  float: left;
+  margin-right: 3.5%;
+  width: 31%;
+  margin-left: -5px;
+  overflow: hidden;
+}
+
+.div-header {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: #32CD80;
+  border: none;
+}
+
+.container {
+  margin-left: 10px;
 }
