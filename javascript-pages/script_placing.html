@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Script placing</title>
+<link rel="stylesheet" href="../green-style.css">
+</head>
+
+<body>
+
+<h1>Script placing</h1>
+
+<p class="note"> Most JavaScript scripts are placed into a HTML document by using one of three different ways</p>
+
+<h2 class="greeny">In event attribute</h2>
+
+<p class="big-text">
+  Some of HTML elements have incredibly handy attributes called <strong>event attributes</strong>,
+  which values are executed when a certain event takes place. For example, <strong>onclick</strong>
+  attribute of a button is activated when the button is being clicked by the user. This way, we can
+  execute JavaScript code as a response to an event.
+</p>
+
+<pre>
+<strong>&lt;button</strong> type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).innerHTML = &apos;Hello World!&apos;&quot;<strong>&gt;</strong>
+  Click me!
+<strong>&lt;/button&gt;</strong>
+</pre>
+
+<p>This script changes a paragraph when the button is clicked</p>
+
+<h2 class="greeny">In script element</h2>
+
+<p>
+  Scripts can also be placed within <strong>&#x3C;script&#x3E;</strong> element,
+  in order to avoid writing long scripts into event attributes.
+</p>
+
+<pre>
+<strong>&lt;button</strong> type=&quot;button&quot; onclick=&quot;myFunction()&quot;<strong>&gt;</strong>
+  Click me!
+<strong>&lt;/button&gt;</strong>
+
+<strong>&lt;script&gt;</strong>
+function myFunction() {
+  document.getElementById(&apos;demo&apos;).innerHTML = &quot;Hello world!&quot;
+}
+<strong>&lt;/script&gt;</strong>
+</pre>
+
+<p class="greeny note">
+  <strong>Script</strong> elements can be placed anywhere in the HTML document, either in <strong>body</strong> or <strong>head</strong> section
+  but it's recommended to put them at the end of the <strong>body</strong> section, because loading scripts slows down the display of the page
+</p>
+
+<h2 class="greeny">In external file</h2>
+
+<p>
+  This method is the best one, because we can separate JavaScript and HTML, which makes the page easier to maintain.
+  External scripts can be imported by using <strong>src</strong> attribute of the <strong>script</strong> element.
+</p>
+
+<pre>
+<strong>&lt;script</strong> src=&quot;script.js&quot;&gt;<strong>&lt;/script&gt;</strong>
+</pre>
+
+<h2 class="greeny">Demonstration</h2>
+<p id="demo">[DEMO PARAGRAPH]</p>
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Paragraph changed by a script written into onclick attribute'">
+  Click to change text
+</button>
+
+<button type="button" onclick="scriptFunction()">
+Click to change text</button>
+
+<button type="button" onclick="externalFunction()">
+Click to change text</button>
+
+
+<script src="scripts/paragraph.js"></script>
+
+<script>
+function scriptFunction() {
+    document.getElementById('demo').innerHTML = "Paragraph changed by a script written in a &#x3C;script&#x3E; element"
+}
+</script>
+
+<hr class="footer">
+<a href="../index.html">Return to home page</a>
+</body>
+</html>
