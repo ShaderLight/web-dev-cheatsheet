@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Script placing</title>
-<link rel="stylesheet" href="../green-style.css">
+  <meta charset="UTF-8">
+  <title>Script placing</title>
+  <link rel="stylesheet" href="../green-style.css">
 </head>
 
 <body>
@@ -20,13 +22,15 @@
   execute JavaScript code as a response to an event.
 </p>
 
-<pre>
-<strong>&lt;button</strong> type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).innerHTML = &apos;Hello World!&apos;&quot;<strong>&gt;</strong>
-  Click me!
-<strong>&lt;/button&gt;</strong>
-</pre>
+<div class="code-box">
+  <code>
+    <strong>&lt;button</strong> type=&quot;button&quot; onclick=&quot;document.getElementById(&apos;demo&apos;).innerHTML = &apos;Hello World!&apos;&quot;<strong>&gt;</strong><br>
+    &nbsp; Click me!<br>
+    <strong>&lt;/button&gt;</strong>
+  </code>
+</div>
 
-<p>This script changes a paragraph when the button is clicked</p>
+<p>Script above changes a paragraph when the button is clicked</p>
 
 <h2 class="greeny">In script element</h2>
 
@@ -35,17 +39,19 @@
   in order to avoid writing long scripts into event attributes.
 </p>
 
-<pre>
-<strong>&lt;button</strong> type=&quot;button&quot; onclick=&quot;myFunction()&quot;<strong>&gt;</strong>
-  Click me!
-<strong>&lt;/button&gt;</strong>
-
-<strong>&lt;script&gt;</strong>
-function myFunction() {
-  document.getElementById(&apos;demo&apos;).innerHTML = &quot;Hello world!&quot;
-}
-<strong>&lt;/script&gt;</strong>
-</pre>
+<div class="code-box">
+  <code>
+    <strong>&lt;button</strong> type=&quot;button&quot; onclick=&quot;myFunction()&quot;<strong>&gt;</strong><br>
+    &nbsp; Click me!<br>
+    <strong>&lt;/button&gt;</strong><br>
+    <br>
+    <strong>&lt;script&gt;</strong><br>
+    &nbsp; function myFunction() {<br>
+      &nbsp; &nbsp; document.getElementById(&apos;demo&apos;).innerHTML = &quot;Hello world!&quot;<br>
+      &nbsp; }<br>
+    <strong>&lt;/script&gt;</strong>
+  </code>
+</div>
 
 <p class="greeny note">
   <strong>Script</strong> elements can be placed anywhere in the HTML document, either in <strong>body</strong> or <strong>head</strong> section
@@ -59,9 +65,11 @@ function myFunction() {
   External scripts can be imported by using <strong>src</strong> attribute of the <strong>script</strong> element.
 </p>
 
-<pre>
-<strong>&lt;script</strong> src=&quot;script.js&quot;&gt;<strong>&lt;/script&gt;</strong>
-</pre>
+<div class="code-box">
+  <code>
+    <strong>&lt;script</strong> src=&quot;script.js&quot;&gt;<strong>&lt;/script&gt;</strong>
+  </code>
+</div>
 
 <h2 class="greeny">Demonstration</h2>
 <p id="demo">[DEMO PARAGRAPH]</p>

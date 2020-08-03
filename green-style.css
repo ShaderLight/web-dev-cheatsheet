@@ -94,12 +94,6 @@ hr {
 
 p {font-family: Verdana;}
 
-pre {
-  font-size: 90%;
-  font-family: Verdana;
-  font-style: italic;
-}
-
 .left-div {
   float: left;
   margin-left: 3.5%;
@@ -140,3 +134,17 @@ pre {
 .container {
   margin-left: 10px;
 }
+
+.code-box {
+  margin-left: 5%;
+  background-color: #EEFEEF;
+  padding: 10px;
+  opacity: 90%;
+  border-left: 2px solid salmon;
+  margin-bottom: 20px;
+}
+
+code {
+  font: 90% monospace;
+}
+
