@@ -148,3 +148,13 @@ code {
   font: 90% monospace;
 }
 
+.list-box {
+  background-color: #f3ebfa;
+  opacity: 90%;
+  padding: 5px;
+  padding-left: 15px;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  border-left: 2px solid salmon;
+  font:  90% Verdana, Geneva, Tahoma, sans-serif;
+}
