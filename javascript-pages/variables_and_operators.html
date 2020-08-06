@@ -25,7 +25,7 @@
 
 <body>
 
-<h1>Operators and variables</h1>
+<h1>Variables and operators</h1>
 
 <p class="note">
   Variables store data values and operators are used to compute 
@@ -164,14 +164,73 @@
   </dl>
 </div>
 
-TODO - variable types, comparison operators and logical operators
-<!--
-    future code, probably
+<p>Comparison operators determine equality or inequality between values</p>
 
-  <p>Variables can hold one of many different types of data</p>
+<p>List of comparison operators</p>
 
-  primitive types
-  <div>
+<div class="list-box">
+  <dl>
+    <dt>==</dt>
+      <dd>equal to</dd>
+    <dt>===</dt>
+      <dd>equal to and equal type</dd>
+    <dt>!=</dt>
+      <dd>not equal to</dd>
+    <dt>!==</dt>
+      <dd>not equal to and not equal type</dd>
+    <dt>&gt;</dt>
+      <dd>greater than</dd>
+    <dt>&lt;</dt>
+      <dd>less than</dd>
+    <dt>&gt;=</dt>
+      <dd>greater than or equal to</dd>
+    <dt>&lt;=</dt>
+      <dd>less than or equal to</dd>
+  </dl>
+</div>
+
+<p>Example</p>
+
+<div class="code-box">
+  <code>
+    var x=10, y=25;<br>
+    x &lt; y //"true"
+  </code>
+</div>
+
+<p>Logical operators are used in logical statements</p>
+
+<p>List of logical operators</p>
+
+<div class="list-box">
+  <dl>
+    <dt>&&</dt>
+      <dd>and</dd>
+    <dt>||</dt>
+      <dd>or</dd>
+    <dt>!</dt>
+      <dd>not</dd>
+  </dl>
+</div>
+
+<p>Example</p>
+
+<div class="code-box">
+  <code>
+    var x=20, y=15, t=true, f=false;<br>
+    <br>
+    x &gt; y && f //"false"<br>
+    x==y || t //"true"
+  </code>
+</div>
+
+<h2 class="greeny">Data types</h2>
+
+<p>Variables can hold one of many different types of data listed below</p>
+
+<div class="list-box">
+  <ul>
+  <li><strong>Primitive types</strong></li>
     <dl>
       <dt>number</dt>
         <dd> 3, 5.6 or -19</dd>
@@ -182,18 +241,41 @@ TODO - variable types, comparison operators and logical operators
       <dt>undefined</dt>
         <dd>returned when a variable has no value assigned</dd>
     </dl>
-  </div>
 
-  complex types
-  <div>
+  <li><strong>Complex types</strong></li>
     <dl>
       <dt>object</dt>
         <dd>object, array or null type</dd>
       <dt>function</dt>
         <dd>functions to be invoked later in the code</dd>
     </dl>
-  </div>
--->
+  </ul>
+</div>
+
+<p class="note">
+  Primitive data values are the simplest types of data which don't have additional
+  properties.
+</p>
+
+<p class="note">
+  Objects and functions are complex data values 
+  which have additional methods and properties.
+</p>
+
+<p>Variable types can be identified by using the <strong>typeof</strong> operator</p>
+
+<div class="code-box">
+  <code>
+    var x,y,z;<br>
+    x = 10<br>
+    y = "pizza"<br>
+    z = true<br>
+    <br>
+    typeof x //"number"<br>
+    typeof y //"string"<br>
+    typeof z //"boolean"
+  </code>
+</div>
 
 <hr class="footer">
 <a href="../index.html">Return to home page</a>
