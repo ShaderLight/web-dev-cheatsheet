@@ -53,6 +53,20 @@
   </code>
 </div>
 
+<div class="example-box">
+  <button type="button" onclick="document.getElementById('demo').innerHTML = 'Paragraph changed by a script written into onclick attribute'">
+    Click to change text
+  </button>
+
+  <button type="button" onclick="scriptFunction()">
+  Click to change text</button>
+
+  <button type="button" onclick="externalFunction()">
+  Click to change text</button>
+
+  <p id="demo">[DEMO PARAGRAPH]</p>
+</div>
+
 <p class="greeny note">
   <strong>Script</strong> elements can be placed anywhere in the HTML document, either in <strong>body</strong> or <strong>head</strong> section
   but it's recommended to put them at the end of the <strong>body</strong> section, because loading scripts slows down the display of the page
@@ -70,19 +84,6 @@
     <strong>&lt;script</strong> src=&quot;script.js&quot;&gt;<strong>&lt;/script&gt;</strong>
   </code>
 </div>
-
-<h2 class="greeny">Demonstration</h2>
-<p id="demo">[DEMO PARAGRAPH]</p>
-<button type="button" onclick="document.getElementById('demo').innerHTML = 'Paragraph changed by a script written into onclick attribute'">
-  Click to change text
-</button>
-
-<button type="button" onclick="scriptFunction()">
-Click to change text</button>
-
-<button type="button" onclick="externalFunction()">
-Click to change text</button>
-
 
 <script src="scripts/paragraph.js"></script>
 

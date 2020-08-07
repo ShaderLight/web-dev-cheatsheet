@@ -158,3 +158,15 @@ code {
   border-left: 2px solid salmon;
   font:  90% Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.example-box {
+  background-color: #ffffe7;
+  opacity: 90%;
+  padding: 5px;
+  padding-left: 15px;
+  padding-top: 10px;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  border-left: 2px solid salmon;
+  font:  90% Verdana, Geneva, Tahoma, sans-serif;
+}
