@@ -63,6 +63,13 @@
   </code>
 </div>
 
+<div class="example-box">
+  <button type="button" onclick="undefValue('undef-demo')">
+    Click to check the value of a variable without any value assigned
+  </button>
+
+  <p id="undef-demo">[output of the script]</p>
+</div>
 <h2 class="greeny">Operators</h2>
 
 <p class="note">
@@ -218,10 +225,18 @@
 <div class="code-box">
   <code>
     var x=20, y=15, t=true, f=false;<br>
-    <br>
-    x &gt; y && f //"false"<br>
-    x==y || t //"true"
   </code>
+</div>
+
+<div class="example-box">
+  <button type="button" onclick="logicalExample1('logical-demo')">
+    x &gt; y && f
+  </button>
+  <button type="button" onclick="logicalExample2('logical-demo')">
+    x==y || t
+  </button>
+
+  <p id="logical-demo">[output of the scripts]</p>
 </div>
 
 <h2 class="greeny">Data types</h2>
@@ -269,16 +284,28 @@
     var x,y,z;<br>
     x = 10<br>
     y = "pizza"<br>
-    z = true<br>
-    <br>
-    typeof x //"number"<br>
-    typeof y //"string"<br>
-    typeof z //"boolean"
+    z = true
   </code>
+</div>
+
+<div class="example-box">
+  <button type="button" onclick="typeofExample('typeof-demo', 'x')">
+    typeof x
+  </button>
+  <button type="button" onclick="typeofExample('typeof-demo', 'y')">
+    typeof y
+  </button>
+  <button type="button" onclick="typeofExample('typeof-demo', 'z')">
+    typeof z
+  </button>
+
+  <p id="typeof-demo">[output of the script]</p>
 </div>
 
 <hr class="footer">
 <a href="../index.html">Return to home page</a>
+
+<script src="scripts/variables_and_operators.js"></script>
 
 </body>
 </html>
