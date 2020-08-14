@@ -1,3 +1,7 @@
+html {
+  overflow-y: scroll;
+}
+
 a:link, a:visited {
   background-color: #32CD80;
   color:white;
@@ -28,9 +32,13 @@ a:hover, a:active {
   padding: 15px 25px;
   border: 5px solid  #CDADEB;
   display: grid;
-  background-color: #EBCDAD;
+  background-color: #f0dac2;
   opacity: 100%;
   box-sizing: border-box;
+}
+
+.subpages:hover {
+  background-color: #f5e6d6;
 }
 
 h2 {
@@ -169,4 +177,14 @@ code {
   margin-bottom: 20px;
   border-left: 2px solid salmon;
   font:  90% Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.expander {
+  max-height: 95px;
+  transition: max-height 2s;
+}
+
+.expander:hover {
+  max-height: 800px;
+  animation: slide infinite 3s alternate;
 }
