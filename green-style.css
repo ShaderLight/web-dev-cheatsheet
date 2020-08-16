@@ -3,7 +3,7 @@ html {
 }
 
 a:link, a:visited {
-  background-color: #32CD80;
+  background-color: #32cd80;
   color:white;
   padding: 15px 25px;
   text-align: center;
@@ -15,7 +15,7 @@ a:link, a:visited {
 
 h1 {
   font-family: Verdana;
-  background-color: #32CD80;
+  background-color: #32cd80;
   color: white;
   margin: 20px;
   padding: 10px 10px;
@@ -23,14 +23,13 @@ h1 {
   opacity: 80%;
 }
 
-
 a:hover, a:active {
   background-color: tomato;
 }
 
 .subpages {
   padding: 15px 25px;
-  border: 5px solid  #CDADEB;
+  border: 5px solid  #cdadeb;
   display: grid;
   background-color: #f0dac2;
   opacity: 100%;
@@ -41,24 +40,11 @@ a:hover, a:active {
   background-color: #f5e6d6;
 }
 
-h2 {
+h2, h3 {
   opacity: 90%;
   font-family: Verdana;
   padding: 10px 15px;
   text-align: center;
-}
-
-h3 {
-  opacity: 90%;
-  font-family: Verdana;
-  padding: 5px 10px;
-  text-align: center;
-}
-
-hr {
-  border: 1px solid  #CDADEB;
-  background-color:  #CDADEB;
-  opacity: 35%;
 }
 
 .small-description {
@@ -73,14 +59,6 @@ hr {
   text-align: left;
   margin: 30px;
   font-family: Verdana;
-}
-
-.centered {
-  text-align: center;
-  margin: auto;
-  display: block;
-  position: absolute;
-  margin: 200px;
 }
 
 .greeny {
@@ -135,7 +113,8 @@ p {font-family: Verdana;}
   margin-top: 50px;
   margin-bottom: 20px;
   padding: 5px;
-  background-color: #32CD80;
+  background-color: #32cd80;
+  opacity: 35%;
   border: none;
 }
 
@@ -145,7 +124,7 @@ p {font-family: Verdana;}
 
 .code-box {
   margin-left: 5%;
-  background-color: #EEFEEF;
+  background-color: #eefeef;
   padding: 10px;
   opacity: 90%;
   border-left: 2px solid salmon;
@@ -186,5 +165,4 @@ code {
 
 .expander:hover {
   max-height: 800px;
-  animation: slide infinite 3s alternate;
 }
